@@ -29,10 +29,12 @@ body{
         background: none;
         cursor: pointer;
         position: absolute;
+
         top: 2.7vh;
         right: 3.38vw;
         z-index: 1;
         ::before{
+
             content: '';
             width: 100%;
             height: 1px;
