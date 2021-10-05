@@ -40,31 +40,34 @@ module.exports = {
 
   module: {
     rules: [
-        
-      // JavaScript
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
-      },
+        // JavaScript
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: ['babel-loader'],
+        },
 
-      // Images
-      {
-        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
-        type: "asset/resource",
-      },
+        // Images
+        {
+            test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+            type: 'asset/resource',
+        },
 
-      // Fonts and SVGs
-      {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: "asset/inline",
-      },
+        // Fonts and SVGs
+        {
+            test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+            type: 'asset/inline',
+        },
 
-      // CSS, PostCSS, and Sass
-      {
-        test: /\.(scss|css)$/,
-        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
-      },
+        // CSS, PostCSS, and Sass
+        {
+            test: /\.(scss|css)$/,
+            use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        },
+
+        //file&url loader
+
+      
     ],
-  },
-};
+},
+}

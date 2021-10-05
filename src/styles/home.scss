@@ -1,0 +1,204 @@
+body{
+    background-color: black;
+}
+.home{
+    background: url(../resource/images/home.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header {
+
+    .header-logo {
+        text-align: center;
+        padding: 15px;
+
+        .header-logo img {
+            width: 5.2vw;
+            height: auto;
+        }
+    }
+    .header-button {
+        width: 42px;
+        padding: 3px 0;
+        display: block;
+        font-size: 0;
+        color: transparent;
+        border: 0;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1.98vh;
+        right: 3.38vw;
+        z-index: 1;
+        .header-button:before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            top: 10px;
+        }
+
+        .header-button-item {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transition: background .2s linear;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 45px;
+        line-height: 45px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        
+        .header-nav-link {
+            font-family: Arterio;
+            color: #fff;
+            font-size: 22px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            width: 25%;
+            position: relative;
+            transition: all .2s linear;
+        }
+        .header-nav-link:not(:last-child)::before { 
+            content: '';
+            width: 1px;
+            height: 32px;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 5px;
+        }
+        .header-nav-link:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .active {
+            background-color: #fff;
+            color: #000; 
+        }
+     }
+     .header-title {
+        font-size: 17.6vh;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 15.74vh;
+        position: absolute;
+        bottom: 9.24vh;
+        left: 3.125vw;
+        .header-title  h1{
+            font-family: trap, sans-serif;
+        }
+    }
+    .header-footer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 2.59vh;
+        left: 3.125vw;
+        right: 3.125vw;
+        padding: 2.59vh 0 0;
+        border-top: 1px solid #fff;
+        a {
+            font-family: trap;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            }
+            .header-social-link {
+                padding-right: 6.3vw;
+            }
+    }
+    .header-swipe {
+        position: absolute;
+        bottom: 32.4vh;
+        right: 3.125vw;
+        .header-swipe-form {
+            width: 40.62vw;
+            height: 24vh;
+            background-color: #B52626;
+            border-radius: 12vh;
+            mix-blend-mode: difference;
+            position: relative;
+        }
+        .header-swipe-btn {
+            position: absolute;
+            width: 24vh;
+            height: 24vh;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 0;
+            right: 0;
+            .header-swipe-btn-items {
+                display: flex;
+                justify-content: center;
+                p {
+                    font-family: trap;
+                    font-size: 1.125rem;
+                    text-transform: uppercase;
+                    line-height: 24vh;
+                    text-align: center;
+                    color: #5A6B6F;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
