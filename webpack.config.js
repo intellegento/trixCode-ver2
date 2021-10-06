@@ -31,6 +31,11 @@ module.exports = {
       filename: "index.html",
     }),
 
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/essentials.html"),
+      filename: "essentials.html",
+    }),
+
     // clean after build
     new CleanWebpackPlugin(),
 
@@ -65,9 +70,7 @@ module.exports = {
             use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
         },
 
-        //file&url loader
-
-      
+       
     ],
 },
 }

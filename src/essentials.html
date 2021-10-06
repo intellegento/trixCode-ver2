@@ -6,198 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrixCode</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/essentials.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="header essentials">
-        <div class="header-inner">
-            <div class="header-logo">
-                <img src="src/images/logo.svg" alt="logo">
-            </div>
-            <buttton class="header-button" type="button">
-                <span class="header-button-item">Menu</span>
-            </buttton>
-            <nav class="header-nav">
-                <a href="home.html" class="header-nav-link">home</a>
-                <a href="essentials.html" class="header-nav-link active">essentials</a>
-                <a href="" class="header-nav-link">it peases</a>
-                <a href="" class="header-nav-link">custom</a>
-            </nav>
+    <main>
+        <header class="header essential">
+            <div class="header-inner">
+                <div class="header-logo">
+                    <img src="<%=require('./resource/images/logo.svg')%>" alt="logo">
+                </div>
+                <buttton class="header-button" type="button">
+                    <span class="header-button-item">Menu</span>
+                </buttton>
+                <nav class="header-nav">
+                    <a href="index.html" class="header-nav-link">home</a>
+                    <a href="essentials.html" class="header-nav-link active">essentials</a>
+                    <a href="" class="header-nav-link">it peases</a>
+                    <a href="" class="header-nav-link">custom</a>
+                </nav>
 
-        </div>
-        <div class="header-title">
-            <h1>The essential <br>line</h1>
-        </div>
-    </header>
 
-    <!-- cover -->
-    <section>
-        <div class="cover cover-first">
-            <div class="content-cover content-cover-first">
-                <img src="src/images/cover1.jpg" alt="cover">
             </div>
-            <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. </p>
+            <div class="header-title">
+                <h1>The essential <br>line</h1>
             </div>
-            <div class="cover-title-text">
-                <p>Our everyday <br>basic collection</p>
-            </div>
-        </div>
-        <div class="cover cover-second">
-            <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. </p>
-            </div>
-            <div class="content-cover content-cover-second">
-                <img src="src/images/cover2.jpg" alt="cover">
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- slider -->
-    <section>
-        <div class="slider-header">
-            <div class="slider-header-title">
-                <p>Preview: Key pieces</p>
-            </div>
-            <div class="slider-header-btns">
-                <button class="slider-header-btn-see-all">See All</button>
-                <div class="slider-header-arrow-btns">
-                    <button class="slider-header-arrow-prev">
-                        <svg width="19" height="18" viewBox="0 0 19 18" fill="#000" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.3997 9.00011L1.59966 9.00011M1.59966 9.00011L9.23602 16.4668M1.59966 9.00011L9.23602 1.53345"
-                                stroke="black" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <button class="slider-header-arrow-next">
-                        <img src="src/images/btn-rgt.svg" alt="next">
-                    </button>
+        <!-- cover -->
+        <section>
+            <div class="cover">
+                <div class="content-cover">
+                    <img src="<%=require('./resource/images/cover1.jpg')%>" alt="cover">
+                </div>
+                <div class="content-text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. </p>
+                </div>
+                <div class="cover-title-text">
+                    <p>Our everyday <br>basic collection</p>
                 </div>
             </div>
-        </div>
-        <div class="slider-swiper">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slider-card">
-                            <div class="slider-card-title">
-                                <h3>Cuban link 2nd line </h3>
-                            </div>
-                            <div class="slider-card-item">
-                                <img src="src/images/slider-item-1.jpg" alt="item">
-                            </div>
-                            <div class="slider-card-descr">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-card">
-                            <div class="slider-card-title">
-                                <h3>Cuban link 2nd line </h3>
-                            </div>
-                            <div class="slider-card-item">
-                                <img src="src/images/slider-item-2.jpg" alt="item">
-                            </div>
-                            <div class="slider-card-descr">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-card">
-                            <div class="slider-card-title">
-                                <h3>Cuban link 2nd line </h3>
-                            </div>
-                            <div class="slider-card-item">
-                                <img src="src/images/slider-item-1.jpg" alt="item">
-                            </div>
-                            <div class="slider-card-descr">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-card">
-                            <div class="slider-card-title">
-                                <h3>Cuban link 2nd line </h3>
-                            </div>
-                            <div class="slider-card-item">
-                                <img src="src/images/slider-item-2.jpg" alt="item">
-                            </div>
-                            <div class="slider-card-descr">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-card">
-                            <div class="slider-card-title">
-                                <h3>Cuban link 2nd line </h3>
-                            </div>
-                            <div class="slider-card-item">
-                                <img src="src/images/slider-item-1.jpg" alt="item">
-                            </div>
-                            <div class="slider-card-descr">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                            </div>
-                        </div>
+            <div class="cover">
+                <div class="content-text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. </p>
+                </div>
+                <div class="content-cover">
+                    <div class="content-background">
+                        <img src="<%=require('./resource/images/cover2.jpg')%>" alt="cover">
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- slider -->
+        <section>
+            <div class="slider-header">
+                <div class="slider-header-title">
+                    <p>Preview: Key pieces</p>
+                </div>
+                <div class="slider-header-btns">
+                    <button class="slider-header-btn-see-all">See All</button>
+                    <div class="slider-header-arrow-btns">
+                        <button class="slider-header-arrow-prev">
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="#000"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.3997 9.00011L1.59966 9.00011M1.59966 9.00011L9.23602 16.4668M1.59966 9.00011L9.23602 1.53345"
+                                    stroke="black" stroke-width="2" />
+                            </svg>
+                        </button>
+                        <button class="slider-header-arrow-next">
+                            <svg width="19" height="18" xmlns="http://www.w3.org/2000/svg">
+                                 <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                                 <path transform="rotate(-180 9.999679565429688,9.00012493133545) " stroke="black" id="svg_1" stroke-width="2" d="m18.3997,9.00011l-16.80004,0m0,0l7.63636,7.46669m-7.63636,-7.46669l7.63636,-7.46666"/>
+                              
+                               </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-swiper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-title">
+                                    <h3>Cuban link 2nd line </h3>
+                                </div>
+                                <div class="slider-card-item">
+                                    <img src="<%=require('./resource/images/slider-item-2.jpg')%>" alt="item">
+                                </div>
+                                <div class="slider-card-descr">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-title">
+                                    <h3>Cuban link 2nd line </h3>
+                                </div>
+                                <div class="slider-card-item">
+                                    <img src="src/images/slider-item-2.jpg" alt="item">
+                                </div>
+                                <div class="slider-card-descr">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-title">
+                                    <h3>Cuban link 2nd line </h3>
+                                </div>
+                                <div class="slider-card-item">
+                                    <img src="src/images/slider-item-1.jpg" alt="item">
+                                </div>
+                                <div class="slider-card-descr">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-title">
+                                    <h3>Cuban link 2nd line </h3>
+                                </div>
+                                <div class="slider-card-item">
+                                    <img src="src/images/slider-item-2.jpg" alt="item">
+                                </div>
+                                <div class="slider-card-descr">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-card">
+                                <div class="slider-card-title">
+                                    <h3>Cuban link 2nd line </h3>
+                                </div>
+                                <div class="slider-card-item">
+                                    <img src="src/images/slider-item-1.jpg" alt="item">
+                                </div>
+                                <div class="slider-card-descr">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
 
     <!-- footer -->
-    <section>
-        <footer class="footer">
-            <div class="footer-title">
-                <h1>Didn’t find what <br>your looking <br>for?</h1>
-            </div>
-            <div class="footer-img-back"></div>
-            <div class="footer-img-front"></div>
-        
-            <div class="footer-swipe-form">
-                
-            </div>
-            <div class="footer-swipe-btn">
-                <div class="footer-swipe-btn-items">
-                    <img src="src/images/arrow-l.svg" alt="">
-                    <p> MAKE your custom</p>
-                </div>
-            </div>
-        
-        
-        </footer>
-    </section>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <footer class="footer">
+        <div class="footer-title">
+            <h1>Didn’t find what <br>your looking <br>for?</h1>
+        </div>
+        <div class="footer-img-back"></div>
+        <div class="footer-img-front"></div>
+
+        <div class="footer-swipe-form">
+
+        </div>
+        <div class="footer-swipe-btn">
+            <div class="footer-swipe-btn-items">
+                <img src="src/images/arrow-l.svg" alt="">
+                <p> MAKE your custom</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2.5,
-            spaceBetween: 1,
-            pagination: {
-                el: ".swiper-pagination"
-            },
-            navigation: {
-                nextEl: ".slider-header-arrow-next",
-                prevEl: ".slider-header-arrow-prev",
-            },
-        });
+        
     </script>
 </body>
 

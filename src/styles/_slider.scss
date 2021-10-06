@@ -1,0 +1,187 @@
+/*************************Slider*/
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5vw 2vh 2.5vw;
+    height: 46px;
+    align-items: center;
+}
+
+.slider-header-title {
+    font-family: trap;
+    font-size: 22px;
+}
+
+.slider-header-btns {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.slider-header-btn-see-all {
+    font-size: 18px;
+    width: 21vw;
+    height: 3.9vh;
+    margin-right: 7.6vw;
+    border-radius: 21px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: all .2s linear;
+}
+
+.slider-header-btn-see-all:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.slider-header-arrow-btns {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.slider-header-arrow-prev {
+    width: 3.9vh;
+    height: 3.9vh;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-right: 0.625vw;
+    transition: all .2s linear;
+}
+
+
+
+.slider-header-arrow-prev:hover {
+    background-color: #000;
+}
+
+.slider-header-arrow-next:hover {
+    background-color: #000;
+}
+
+.slider-header-arrow-next {
+    width: 3.9vh;
+    height: 3.9vh;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-right: 0.625vw;
+    transition: all .2s linear;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-swiper {
+      margin: 0 0 0 2.5vw;
+      padding: 2.96vh 0;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      margin-bottom: 9.25vh;
+  }
+
+  .slider-card {
+      height: 78.7vh;
+      width: 40.5vw;
+      background-color: #F1F1F1;
+      border-right: 1px solid #000;
+      position:relative;
+  }
+
+  .slider-card-title {
+      font-family: trap;
+      font-size: 32px;
+      color: #000;
+      position: absolute;
+      top: 3.9vh;
+      left: 2.18vw;
+  }
+
+  .slider-card-item {
+      height: 55vh;
+      width: 21.25vw;
+      margin: auto;
+      position: absolute;
+      top: 11.1vh;
+      left: 9.63vw;
+      background-color: #F1F1F1;
+  }
+
+  .slider-card-item img {
+    border-radius: 220px; 
+  }
+
+  .slider-card-descr {
+      text-align: left;
+    font-family: trap;
+    font-size: 18px;
+    position: absolute;
+    bottom: 3.8vh;
+    left: 2.18vw;
+    width: 19.375vw;
+  }
