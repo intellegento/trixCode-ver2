@@ -169,7 +169,11 @@
       position: absolute;
       top: 11.1vh;
       left: 9.63vw;
-      background-color: #F1F1F1;
+      filter: grayscale(100);
+      transition: all .2s;
+      &:hover {
+          filter: grayscale(0);
+      }
   }
 
   .slider-card-item img {
