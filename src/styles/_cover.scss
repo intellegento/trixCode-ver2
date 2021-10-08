@@ -1,4 +1,4 @@
-/*************************Cover*/
+
 section {
     background-color: #fff;
     position: relative;
@@ -7,24 +7,25 @@ section {
 
 .cover-title-text {
     font-family: trap;
-    position: absolute;
     color: #fff;
     font-size: 11.30vh;
     text-transform: uppercase;
     mix-blend-mode: difference;
-    top: 83.24vh;
-    left: 9.9vw;
+    position: absolute;
+    z-index: 5;
+    top: 83.2vh;
+    left: 10vw;
 }
 
 .cover {
     width: 100vw;
-    height: 91.6vh;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     margin-bottom: 21.30vh;
+
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 9vh;
     }
 
     .content-text {
@@ -36,7 +37,7 @@ section {
     }
 
     .content-cover{
-        width: 50vw;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -46,6 +47,10 @@ section {
             .content-background {
                 margin-right: 2.5vw;
             }
+        }
+
+        img {
+            width: 95%;
         }
 
         .content-background {
@@ -60,88 +65,104 @@ section {
 }
 
 
-
-  /*************************Footer*/
-
-
-  .footer {
-    background-color: #fff;
-    height: 100vh;
-    width: auto;
-    position: relative;
-    padding-top: 5.55vh;
-  }
-
-  .footer-title {
-      font-family: trap;
-      font-size: 11.30vh;
-      position: absolute;
-      left: 38.2vw;
-      top: 5.55vh;
-      z-index: 2;
-      color: #fff;
-      text-transform: uppercase;
-      mix-blend-mode: difference;
-  }
-
-  .footer-img-back {
-      background-image: url(../resource/images/footer-img-back.jpg);
-      width: 75.625vw;
-      height: 74vh;
-      background-size: cover;
-      position: absolute;
-      z-index: 1;
-      top: 14.8vh;
-  }
-
-  .footer-img-front {
-        background-image: url(../resource/images/footer-img-front.jpg);
-        width: 61.98vw;
-        height: 66.1vh;
-        background-size: cover;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-  }
-
-
-
-.footer-swipe-form {
-    position: absolute;
-    top: 50vh;
-    left: 1.46vw;
-    z-index: 5;
-    width: 69.4vw;
-    height: 24vh;
-    background-color: #B52626;
-    mix-blend-mode: difference;
-    border-radius: 12vh;
-    position: relative;
+@media (max-width: 1681px) {
+    .cover-title-text {
+        font-size: 110px;
+        top: 765px;
+        left: 130px;
+    }
+    .cover {
+        margin-bottom: 190px;
+    }
 }
 
-.footer-swipe-btn {
-    position: absolute;
-    width: 24vh;
-    height: 24vh;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 55.55vh;
-    left: 57.46vw;
-    z-index: 10;
+
+@media (max-width: 1024px) {
+
+    
+    
+    .cover-title-text {
+        font-size: 76px;
+        top: 460px;
+        left: 80px;
+    }
+    
+    .cover {
+        margin-bottom: 120px;
+    
+        &:last-child {
+            margin-bottom: 60px;
+        }
+    
+        .content-text {
+            font-size: 18px;
+        }
+    
+        .content-cover{
+    
+            .content-background {
+                width: 390px;
+                height: 480px;
+            }
+        } 
+    }
+}
+ 
+
+@media (max-width: 769px) {
+    .cover-title-text {
+        font-size: 70px;
+        top: 335px;
+        left: 68px;
+    }
+
+    .cover {
+        margin-bottom: 100px;
+    
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    
+        .content-text {
+            font-size: 18px;
+        }
+    
+        .content-cover{
+    
+            .content-background {
+                width: 230px;
+                height: 300px;
+            }
+        } 
+    }
 }
 
-.footer-swipe-btn-items {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-swipe-btn p {
-    font-family: trap;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 260px;
-    text-align: center;
-    color: #5A6B6F;
-    padding-left: 0.52vw;
+@media (max-width: 576px) {
+    .cover-title-text {
+        font-size: 50px;
+        z-index: 5;
+        top: 254px;
+        left: 10vw;
+    }
+    
+    .cover {
+        margin-bottom: 80px;
+    
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    
+        .content-text {
+            font-size: 14px;
+            width: 35vw;
+        }
+    
+        .content-cover{
+    
+            .content-background {
+                width: 210px;
+                height: 110%;
+            }
+        } 
+    }
 }
