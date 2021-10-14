@@ -109,13 +109,16 @@
         text-transform: uppercase;
         color: #fff;
         line-height: 15.74vh;
-        position: absolute;
+        position: relative;
         bottom: 9.24vh;
         left: 3.125vw;
-
-        .header-title  h1{
-            font-family: trap, sans-serif;
-        }
+        position: absolute;
+          
+          .title .letter {
+            display: inline-block;
+            line-height: 1em;
+          }
+        
     }
     .header-footer {
         position: absolute;
@@ -139,47 +142,58 @@
                 padding-right: 6.3vw;
             }
     }
-    .header-swipe {
+    form {
         position: absolute;
         bottom: 32.4vh;
         right: 3.125vw;
-
-        .header-swipe-form {
-            width: 40.62vw;
-            height: 24vh;
-            background-color: #B52626;
-            border-radius: 12vh;
-            mix-blend-mode: difference;
-            position: relative;
+        width: 600px;
+      }
+      
+      .slide-submit {
+        width: 600px;
+        height: 240px;
+        background: #B52626;
+        mix-blend-mode: difference;
+        border-radius: 120px;
+        position: relative;
+        
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        width: 240px;
+        height: 240px;
+        border-radius: 120px;
+        background: #fff;
+        color: #000;
+        border: none;
+        transition: all 200ms linear;
+        cursor: pointer;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-family: trap;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: #5A6B6F;
+            padding-left: 10px;
         }
-
-        .header-swipe-btn {
-            position: absolute;
-            width: 24vh;
-            height: 24vh;
-            border-radius: 50%;
-            background-color: #fff;
-            top: 0;
-            right: 0;
-            display: flex;
-
-            .header-swipe-btn-items {
-                margin: auto;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                
-                p {
-                    font-family: trap;
-                    font-size: 1.125rem;
-                    text-transform: uppercase;
-                    text-align: center;
-                    color: #5A6B6F;
-                    padding-left: 10px;
-                }
-            }
+      }
+        .submit-btn.submitted {
+          width: 97%;
+          opacity: 0.8;
         }
-    }
+        .submit-btn.submitted {
+          display: none;
+        }
+      
+        
     
 }
 

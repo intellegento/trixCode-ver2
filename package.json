@@ -20,6 +20,7 @@
   "homepage": "https://github.com/intellegento/trixCode-ver2#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@types/jqueryui": "^1.12.16",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
     "file-loader": "^6.2.0",
@@ -31,16 +32,23 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
+    "@types/jqueryui": "^1.12.16",
+    "animejs": "^3.2.1",
     "css-loader": "^6.3.0",
+    "gsap": "^3.8.0",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.0",
     "loader": "^2.1.1",
     "node-sass": "^6.0.1",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.1.0",
+    "split-text-js": "^1.0.3",
     "style": "0.0.3",
     "style-loader": "^3.3.0",
-    "swiper": "^7.0.8"
+    "swiper": "^7.0.8",
+    "typei": "^0.7.0"
   },
   "description": ""
 }

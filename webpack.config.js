@@ -19,7 +19,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     open: true,
-    compress: true,
+    compress: false,
     hot: true,
     port: process.env.PORT,
   },
@@ -41,6 +41,12 @@ module.exports = {
 
     // Only update what has changed on hot reload
     new webpack.HotModuleReplacementPlugin(),
+
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'windows.jQuery': 'jquery',
+    }),
   ],
 
   module: {
