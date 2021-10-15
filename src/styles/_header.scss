@@ -3,6 +3,7 @@
     height: 100vh;
     width: 100vw;
     position: relative;
+    touch-action: none;
 }
 
 .essential {
@@ -12,6 +13,7 @@
     width: 100vw;
     position: relative;
     margin-bottom: 9.25vh;
+    touch-action: none;
 }
 
 .header {
@@ -73,6 +75,7 @@
         line-height: 45px;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
+        z-index: 50;
         
         .header-nav-link {
             font-family: Arterio;
@@ -110,9 +113,9 @@
         color: #fff;
         line-height: 15.74vh;
         position: relative;
-        bottom: 9.24vh;
         left: 3.125vw;
         position: absolute;
+        white-space: pre-line;
           
           .title .letter {
             display: inline-block;
@@ -142,31 +145,32 @@
                 padding-right: 6.3vw;
             }
     }
-    form {
+    .header-form{
         position: absolute;
-        bottom: 32.4vh;
+        top: 43.5vh;
         right: 3.125vw;
-        width: 600px;
-      }
+        width: 40.625vw;
+        touch-action: none;
+      
       
       .slide-submit {
-        width: 600px;
-        height: 240px;
+        width: 40.625vw;
+        height: 260px;
         background: #B52626;
         mix-blend-mode: difference;
-        border-radius: 120px;
+        border-radius: 130px;
         position: relative;
         
       }
-      button {
+      .submit-btn {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         z-index: 10;
-        width: 240px;
-        height: 240px;
-        border-radius: 120px;
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
         background: #fff;
         color: #000;
         border: none;
@@ -185,15 +189,15 @@
             padding-left: 10px;
         }
       }
-        .submit-btn.submitted {
-          width: 97%;
-          opacity: 0.8;
-        }
-        .submit-btn.submitted {
-          display: none;
-        }
+        // .submit-btn.submitted {
+        //   width: 97%;
+        //   opacity: 0.8;
+        // }
+        // .submit-btn.submitted {
+        //   display: none;
+        // }
       
-        
+    }  
     
 }
 
@@ -215,21 +219,24 @@
     .header-title {
         font-size: 150px !important;
         line-height: 130px !important;
+        top: 200px;
         }
     
-        .header-swipe {
-            bottom: 26.4vh !important;
-    
-            .header-swipe-form {
-                width: 38.62vw !important;
-                height: 22vh !important;
-            }
-    
-            .header-swipe-btn {
-                width: 22vh !important;
-                height: 22vh !important;
-            }
+        .header-form {
+          
+          .slide-submit {
+            height: 240px !important;
+            border-radius: 120px !important;
+            
+          }
+          .submit-btn {
+              height: 240px !important;
+              width: 240px !important;
+              border-radius: 120px !important;
+          }
         }
+            
+    
 }
 
 
@@ -254,19 +261,19 @@
         top: 22vh !important;
         }
     
-        .header-swipe {
-            bottom: 12.4vh !important;
-    
-            .header-swipe-form {
-                width: 90.62vw !important;
-                height: 22vh !important;
+        .header-form {
+          
+            .slide-submit {
+              height: 180px !important;
+              border-radius: 90px !important;
+              
             }
-    
-            .header-swipe-btn {
-                width: 22vh !important;
-                height: 22vh !important;
+            .submit-btn {
+                height: 180px !important;
+                width: 180px !important;
+                border-radius: 90px !important;
             }
-        }
+          }
 
         .header-footer {
     
@@ -290,16 +297,21 @@
         top: 25vh !important;
     }
     
-    .header-swipe {
-        top: 55.4vh !important;
-    
-        .header-swipe-form {
-            width: 85.62vw !important;
-            height: 22vh !important;
+    .header-form {
+         top: 70vh !important;
 
-            
+        .slide-submit {
+          height: 180px !important;
+          border-radius: 90px !important;
+          
         }
-    }
+        .submit-btn {
+            margin: 0 auto !important;
+            height: 180px !important;
+            width: 180px !important;
+            border-radius: 90px !important;
+        }
+      }
 
         
 }
@@ -319,24 +331,24 @@
             top: 5px !important;
         }
     }
-    .header-swipe {
-        top: 65vh !important;
 
-        .header-swipe-form {
-            height: 18vh !important;
-        }
+    .header-form {
+        top: 75vh !important;
+        width: 70vw !important;
 
-        .header-swipe-btn {
-            width: 18vh !important;
-            height: 18vh !important;
-
-            .header-swipe-btn-items {
-                
-                p {
-                    font-size: 1rem !important;
-                }
-            }
-        }
-    }
+       .slide-submit {
+        width: 70vw !important;
+         height: 180px !important;
+         border-radius: 90px !important;
+         
+       }
+       .submit-btn {
+           margin: 0 auto !important;
+           height: 180px !important;
+           width: 180px !important;
+           border-radius: 90px !important;
+       }
+     }
+   
 }
 

@@ -9,27 +9,32 @@
 </head>
 
 <body>
-    <main>
-        <header class="header essential">
-            <div class="header-inner">
-                <div class="header-logo">
-                    <img src="<%=require('./resource/images/logo.svg')%>" alt="logo">
-                </div>
-                <buttton class="header-button" type="button">
-                    <span class="header-button-item">Menu</span>
-                </buttton>
-                <nav class="header-nav">
-                    <a href="index.html" class="header-nav-link">home</a>
-                    <a href="essentials.html" class="header-nav-link active">essentials</a>
-                    <a href="" class="header-nav-link">it peases</a>
-                    <a href="" class="header-nav-link">custom</a>
-                </nav>
+    <header class="header essential">
+        <div class="header-inner">
+            <div class="header-logo">
+                <img src="<%=require('./resource/images/logo.svg')%>" alt="logo">
             </div>
-            <div class="header-title">
-                <h1>The essential <br>line</h1>
-            </div>
-        </header>
+            <buttton class="header-button" type="button">
+                <span class="header-button-item">Menu</span>
+            </buttton>
+            <nav class="header-nav">
+                <a href="index.html" class="header-nav-link">home</a>
+                <a href="essentials.html" class="header-nav-link active">essentials</a>
+                <a href="" class="header-nav-link">it peases</a>
+                <a href="" class="header-nav-link">custom</a>
+            </nav>
+        </div>
+        <div class="header-title">
+            <h1 class="title" id="title">
+                <p>the essential</p>
+                <p><br>line</p>
+            </h1>
+        </div>
+    </header>
 
+
+    <main>
+        
         <!-- cover -->
         <section>
             <div class="cover">
@@ -172,15 +177,15 @@
         </div>
         <div class="footer-img-back"></div>
         <div class="footer-img-front"></div>
-        <div class="footer-swipe">
-            <div class="footer-swipe-form"></div>
-            <div class="footer-swipe-btn">
-                <div class="footer-swipe-btn-items">
-                    <img src="<%=require('./resource/images/arrow-l.svg')%>" alt="">
-                    <p> MAKE your custom</p>
-                </div>
+        <form class="footer-form">
+            <div class="footer-slide-submit">
             </div>
-        </div>
+            <button type="submit" class="footer-submit-btn">
+                <img src="<%=require('./resource/images/arrow-l.svg')%>" alt="">
+                <p>make your custom</p>
+              </button> 
+             
+        </form>
     </footer>
 
 </body>

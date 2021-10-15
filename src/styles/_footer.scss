@@ -36,49 +36,60 @@
         right: 0;
         bottom: 0;
   }
-    .footer-swipe {
+    .footer-form {
         position: absolute;
         top: 55vh;
         left: 1.46vw;
-
-        .footer-swipe-form {
+        width: 70vw;
+        touch-action: none;
+    
+    
+        .footer-slide-submit {
             width: 70vw;
-            height: 24vh;
-            background-color: #B52626;
-            border-radius: 12vh;
+            height: 260px;
+            background: #B52626;
             mix-blend-mode: difference;
+            border-radius: 130px;
             position: relative;
+            
         }
-
-        .footer-swipe-btn {
+        .footer-submit-btn {
             position: absolute;
-            width: 24vh;
-            height: 24vh;
-            border-radius: 50%;
-            background-color: #fff;
             top: 0;
             right: 0;
+            bottom: 0;
+            z-index: 10;
+            width: 260px;
+            height: 260px;
+            border-radius: 130px;
+            background: #fff;
+            color: #000;
+            border: none;
+            transition: all 200ms linear;
+            cursor: pointer;
+            margin: auto;
             display: flex;
-
-            .footer-swipe-btn-items {
-                margin: auto;
-                display: flex;
-                justify-content: center;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-family: trap;
+                font-size: 1.125rem;
+                text-transform: uppercase;
                 text-align: center;
-                
-                p {
-                    font-family: trap;
-                    font-size: 1.125rem;
-                    text-transform: uppercase;
-                    text-align: center;
-                    color: #5A6B6F;
-                    padding-left: 10px;
-                }
+                color: #5A6B6F;
+                padding-left: 10px;
             }
+        
+            // .footer-submit-btn.submitted {
+            //   width: 97%;
+            //   opacity: 0.8;
+            // }
+            // .footer-submit-btn.submitted {
+            //   display: none;
+            // }
         }
     }
 }
-
 
 @media (max-width: 1681px) {
     .footer {
@@ -139,24 +150,30 @@
         .footer-img-front {
             width: 50%;
       }
-        .footer-swipe {
-            top: 420px;
-            left: 50px;
+
+      .footer-form {
+        position: absolute;
+        top: 440px;
+        left: 30px;
     
-            .footer-swipe-form {
-                height: 200px;
-                border-radius: 100px;
-            }
     
-            .footer-swipe-btn {
-                width: 200px;
-                height: 200px;
-                    
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
+        .footer-slide-submit {
+            width: 70vw;
+            height: 180px;
+            border-radius: 90px;
+            
+        }
+        .footer-submit-btn {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            p {
+                font-size: 1rem;
+                padding-left: 5px;
             }
+        }
+    }
+        
         }
     
     
@@ -182,22 +199,28 @@
             width: 60%;
       }
       
-        .footer-swipe {
-            position: absolute;
-            top: 300px;
-            left: 40px;
+      .footer-form {
+        position: absolute;
+        top: 330px;
+        left: 30px;
     
-            .footer-swipe-form {
-                height: 180px;
-                border-radius: 90px;
-            }
     
-            .footer-swipe-btn {
-                width: 180px;
-                height: 180px;
-                
+        .footer-slide-submit {
+            width: 70vw;
+            height: 160px;
+            border-radius: 80px;
+            
+        }
+        .footer-submit-btn {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            p {
+                font-size: 0.9rem;
+                padding-left: 5px;
             }
         }
+    }
     }
      
 }
@@ -223,27 +246,29 @@
             width: 330px;
             height: 200px;
       }
-        .footer-swipe {
-            top: 170px;
-            left: 30px;
+
+      .footer-form {
+        position: absolute;
+        top: 140px;
+        left: 30px;
     
-            .footer-swipe-form {
-                width: 70vw;
-                height: 100px;
-                border-radius: 50px;
-            }
     
-            .footer-swipe-btn {
-                width: 100px;
-                height: 100px;
-    
-                .footer-swipe-btn-items {
-                    
-                    p {
-                        font-size: 12px !important;
-                    }
-                }
+        .footer-slide-submit {
+            width: 70vw;
+            height: 120px;
+            border-radius: 60px;
+            
+        }
+        .footer-submit-btn {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            p {
+                font-size: 0.8rem;
+                padding-left: 5px;
             }
         }
+    }
+        
     }
 }

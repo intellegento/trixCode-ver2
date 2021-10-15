@@ -38,9 +38,9 @@ const swiper = new Swiper(".swiper", {
 
 
 var textWrapper = document.querySelector('.title');
-textWrapper.textContent = "err one" + " deserves" + "to be iced out";
+// textWrapper.textContent = "err one" + " deserves" + "to be iced out";
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-//  textWrapper.innerHTML = textWrapper.textContent.replace(/<br ?\/?>/g, "\n");
+// textWrapper.innerHTML = textWrapper.textContent.replace(/<br ?\/?>/g, "\n");
 
 
 
@@ -61,14 +61,24 @@ anime.timeline({loop: false})
     if (($(this).parent().width() / 2.5) === ($(this).position().left)) {
       $(this).closest("form").submit();
     } else {
-      $(this).css({left: 80});
+      $(this).css({left: 0});
+    }
+  }}).on("click", function() {
+    return false;
+  });
+
+  $(".footer-submit-btn").draggable({cancel: false, containment: "parent", axis: "x", stop: function() {
+    if (($(this).parent().width() / 2.5) === ($(this).position().left)) {
+      $(this).closest("footer-form").submit();
+    } else {
+      $(this).css({left: 0});
     }
   }}).on("click", function() {
     return false;
   });
   
 //   element.addEventListener(preventDefault, { passive: false });
-  window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+//   window.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
 
   document.addEventListener("touchstart", touchHandler, true);
   document.addEventListener("touchmove", touchHandler, true);
