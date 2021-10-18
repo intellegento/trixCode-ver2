@@ -1,0 +1,27 @@
+{
+  "name": "trixcode_next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "css-loader": "^6.4.0",
+    "next": "11.1.2",
+    "next-fonts": "^1.5.1",
+    "postcss-loader": "^6.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2"
+  }
+}
