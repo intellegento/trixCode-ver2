@@ -1,6 +1,4 @@
-.body {
-
-.home{
+.header_home{
     background: url(../src/images/home.jpg) no-repeat #000;
    
 }
@@ -17,6 +15,7 @@
     width: 100vw;
     position: relative;
     touch-action: none;
+    
     .header_logo {
         text-align: center;
         padding: 15px;
@@ -200,7 +199,7 @@
     }  
     
 }
-}
+
 
 @media (max-width: 1681px) {
     .header-nav {
