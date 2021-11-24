@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/header.module.scss'
 import clsx from  'clsx'
+import Title from '../components/title/Title'
+import '../styles/main.scss'
 
 
 
@@ -46,9 +48,7 @@ function Home() {
                   <a href="" className={styles.header_nav_link}>custom</a>
               </nav>
   
-          <div className={styles.header_title}><h1 className={styles.Title} id="Title"><p>err one</p>
-              <p>deserves</p>
-              <p>to be iced out</p>
+          <div className={styles.header_title}><h1 className={styles.Title} id="Title">
               </h1>
           </div>
           <div className={styles.header_footer}>
