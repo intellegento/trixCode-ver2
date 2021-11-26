@@ -3,9 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/header.module.scss'
 import clsx from  'clsx'
 import Title from '../components/title/Title'
-import '../styles/main.scss'
-
-
+import Nav from '../components/nav/Nav'
 
 
 function Home() {
@@ -41,25 +39,15 @@ function Home() {
               <buttton className={styles.header_button} type="button">
                   <span className={styles.header_button_item}>Menu</span>
               </buttton>
-              <nav className={styles.header_nav}>
-                  <a href="index.html" className={ clsx(styles.header_nav_link, styles.active)}>home</a>
-                  <a href="essentials.html" className={styles.header_nav_link}>essentials</a>
-                  <a href="" className={styles.header_nav_link}>it peases</a>
-                  <a href="" className={styles.header_nav_link}>custom</a>
+              < Nav />
+             <nav className={styles.header_nav}>
+              <a href="index.html" className={ clsx(styles.header_nav_link, styles.active)}>home</a>
+              <a href={"/essentials.html"} className={styles.header_nav_link}>essentials</a>
+              <a href="" className={styles.header_nav_link}>it peases</a>
+              <a href="" className={styles.header_nav_link}>custom</a>
               </nav>
-  
-          <div className={styles.header_title}><h1 className={styles.Title} id="Title">
-              </h1>
-          </div>
-          <div className={styles.header_footer}>
-              <div className={styles.header_social}>
-                  <a className={styles.header_social_link} href="">instagram</a>
-                  <a href="">twitter</a>
-              </div>
-              <div className={styles.header_watch_video}>
-                  <a href="">watch video</a>
-              </div>
-          </div>
+         
+              < Title />
           <form className={styles.header_form}>
               <div className={styles.slide_submit}>
               </div>
@@ -71,6 +59,16 @@ function Home() {
                 </button> 
                
             </form>
+          <div className={styles.header_footer}>
+              <div className={styles.header_social}>
+                  <a className={styles.header_social_link} href="">instagram</a>
+                  <a href="">twitter</a>
+              </div>
+              <div className={styles.header_watch_video}>
+                  <a href="">watch video</a>
+              </div>
+          </div>
+         
         </header >
     </div>
   )

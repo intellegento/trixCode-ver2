@@ -1,3 +1,10 @@
+@font-face {
+    font-family: trap; 
+    src: url(../src/fonts/Trap-Regular.woff2);
+   }
+
+
+
 .header_home{
     background: url(../src/images/home.jpg) no-repeat #000;
    
@@ -109,8 +116,8 @@
         font-size: 17.6vh;
         line-height: 14vh;
         text-transform: uppercase;
+        font-family: trap;
         color: #fff;
-        position: relative;
         top: 43.5vh;
         left: 3.125vw;
         position: absolute;
@@ -119,6 +126,9 @@
           #Title #Letter {
             display: inline-block;
             line-height: 1em;
+          }
+          p {
+              margin: 0;
           }
         
     }

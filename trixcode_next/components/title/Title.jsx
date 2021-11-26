@@ -1,13 +1,15 @@
 import React from "react"
+import styles from '../../styles/header.module.scss'
 
 function Title() {
     return (
-        <div className={styles.header_title}><h1 className={styles.Title} id="Title"><p>err one</p>
+        <div className={styles.header_title}><p>err one</p>
               <p>deserves</p>
               <p>to be iced out</p>
-              </h1>
           </div>
     )
 }
+
+
 
 export default Title
